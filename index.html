@@ -3,10 +3,69 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Benjamin McMillan</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>bbbbbb</title>
+
+    <script>
+
+    // window.onload = () => {
+
+function display(x) {
+    var text = document.getElementById("test2");
+    // document.getElementsById("test2").style.display = ""
+    text.style.display = "block";
+    // $.css("width", "100px");
+    // x.style.height = "64px";
+    // x.style.width = "64px";
+}
+
+function displayOff(x) {
+  var text = document.getElementById("test2");
+  text.style.display = "none";
+}
+// }
+</script>
+
   </head>
   <body>
-    <p class="info">Benjamin McMillan</p>
-    <p class="info">Portfolio</p>
+    <div id="heading">
+      <p class="info">Benjamin McMillan</p>
+      <!-- <p class="info">Portfolio</p> -->
+      <p class="info">benmcmillan[at]fastmail.co.uk</p>
+      <p class="info">Falmouth 2014-2016</p>
+      <p class="info">ArtEZ 2016-</p>
+      <p class="info">Internship: ZeroDotZero 2018</p>
+    </div>
+
+    <div id="description">
+      <!-- <p class="workText" id="test1"> alknfsdap faosd fpas dfpsmd fpasmdp spdfm psdfs foma sdpfsaofm spad fkoa skdasdf osa foaefo eo </p> -->
+      <p class="workText" id="test2"> test description, this is where the descriptions of the project will go. It will be displayed overlayed above the work and will change on mouse hover or mouse click. </p>
+    </div>
+
+    <div id="work">
+      <div onmouseover="display(this)" onmouseout="displayOff(this)" class="imagesofWork" id="workOne">
+        <img src="work/IoT/4.jpg">
+        <!-- <img src="work/IoT/6.jpg"> -->
+        <!-- <img src="work/IoT/6.jpg"> -->
+      </div>
+      <div class="imagesofWork" id="workFour">
+        <img src="work/OtBT/1.jpeg">
+      </div>
+      <div class="imagesofWork" id="workThree">
+        <img src="work/AoV/1.jpeg">
+      </div>
+      <div class="imagesofWork" id="workTwo">
+        <img src="work/GaNP/1.jpg">
+      </div>
+      <div class="imagesofWork" id="workFive">
+        <img src="work/GGG/1.gif">
+      </div>
+      <div class="imagesofWork" id="workSix">
+        <img src="work/Paris/1.jpeg">
+      </div>
+      <div class="imagesofWork" id="workSeven">
+        <img src="work/Type/1.png">
+      </div>
+    </div>
   </body>
 </html>

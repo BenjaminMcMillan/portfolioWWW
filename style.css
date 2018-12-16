@@ -1,4 +1,86 @@
-.info{
-  font-family: monospace;
-  padding-top: 20px;
+@font-face {
+    font-family: "LincolnMITRE-LM5x7";
+    src: url("type/LincolnMITRE-LM5x7.woff") format('woff');
+}
+
+@font-face {
+    font-family: "LincolnMITRE-LM";
+    src: url("type/LincolnMITRE-LM.woff") format('woff');
+}
+
+
+body {
+  /* background-color: RGB(255, 86, 38); */
+  /* background-color: RGB(127, 203, 239); */
+  background-color: black;
+  font-family: LincolnMITRE-LM;
+  /* font-family: LincolnMITRE-LM5x7; */
+  color: pink;
+  /* height: 100%; */
+  /* font-size: 10vw; */
+}
+
+#heading {
+  position: fixed;
+  width: 33%;
+  font-size: 3vw;
+  line-height: 95%;
+}
+
+.info {
+  margin: 0;
+}
+
+.info:hover{
+  color: pink;
+  /* font-family: monospace; */
+  /* padding-top: 20px; */
+}
+
+.workText {
+  position: fixed;
+  display: none;
+  bottom: 0;
+  width: 66%;
+  line-height: 95%;
+  font-size: 3vw;
+  margin-bottom: 0;
+}
+
+#test2 {
+  display: none;
+}
+
+#test2:hover {
+  display: none;
+  color: red;
+}
+
+/* #description { */
+  /* width: 66%; */
+  /* height: 1vw */
+  /* position: fixed; */
+  /* bottom: 0%; */
+/* } */
+
+#work {
+  width: 66%;
+  float: right;
+  display: flex;
+  flex-wrap: wrap;
+  /* height: 300px; */
+  /* right: 0px; */
+}
+
+.imagesofWork {
+  padding-right: 5px;
+  width: 48%;
+  flex-grow: 2;
+  /* width: 100px; */
+}
+
+img {
+  margin-top: 0;
+  width: 100%;
+  flex-grow: 2;
 }
