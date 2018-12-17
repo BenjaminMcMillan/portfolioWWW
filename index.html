@@ -3,62 +3,45 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js.js"></script>
     <title>bbbbbb</title>
-
-    <script>
-
-    // window.onload = () => {
-
-function display(x) {
-    var text = document.getElementById("test2");
-    // document.getElementsById("test2").style.display = ""
-    text.style.display = "block";
-    // $.css("width", "100px");
-    // x.style.height = "64px";
-    // x.style.width = "64px";
-}
-
-function displayOff(x) {
-  var text = document.getElementById("test2");
-  text.style.display = "none";
-}
-// }
-</script>
-
-  </head>
-  <body>
+  </head>  <body>
     <div id="heading">
       <p class="info">Benjamin McMillan</p>
       <!-- <p class="info">Portfolio</p> -->
+      <div id="secondInfo">
       <p class="info">benmcmillan[at]fastmail.co.uk</p>
+      <p class="info">Studies:</p>
       <p class="info">Falmouth 2014-2016</p>
       <p class="info">ArtEZ 2016-</p>
-      <p class="info">Internship: ZeroDotZero 2018</p>
+      <p class="info">Internships: ZeroDotZero 2018</p>
+    </div>
     </div>
 
     <div id="description">
-      <!-- <p class="workText" id="test1"> alknfsdap faosd fpas dfpsmd fpasmdp spdfm psdfs foma sdpfsaofm spad fkoa skdasdf osa foaefo eo </p> -->
-      <p class="workText" id="test2"> test description, this is where the descriptions of the project will go. It will be displayed overlayed above the work and will change on mouse hover or mouse click. </p>
+      <p class="workText" id="IoT"><span>Instructions on Type</span> Lettering designed/made through the almost thoughtless ambling of me. Each letterform constructed and walked out in several cities, Arnhem, Utrecht, Rotterdam, Den Haag with no previous planning or mapping out. A decision was made in the moment which way to walk and when to turn. This led to some oddly shaped characters. The book is an instruction manual/map on creating letters.
+      </p>
+      <p class="workText" id="OtBT"><span>Off the Beaten Track</span> Research done into the quiet spaces that exist in the Eftling (a theme park in The Netherlands). I was interested in how the theme has been designed in a way that tries to maximise the people travelling to rides and stalls but are there any spaces that fail to do this? Quiet zones and empty spots. Where empty benches lie and unused trash cans sit. </p>
+      <p class="workText" id="AoV"><span>Acme of Value</span> A photo project and photo book that explores the value that photographs give their subject matter. </p>
     </div>
 
     <div id="work">
-      <div onmouseover="display(this)" onmouseout="displayOff(this)" class="imagesofWork" id="workOne">
-        <img src="work/IoT/4.jpg">
+      <div onmouseover="display(this)" onmouseout="displayOff(this)" class="imagesofWork">
+        <img id="workOne" src="work/IoT/4.jpg">
         <!-- <img src="work/IoT/6.jpg"> -->
         <!-- <img src="work/IoT/6.jpg"> -->
       </div>
-      <div class="imagesofWork" id="workFour">
-        <img src="work/OtBT/1.jpeg">
+      <div onmouseover="display2(this)" onmouseout="displayOff2(this)" class="imagesofWork">
+        <img id="workFour" src="work/OtBT/1.jpeg">
       </div>
-      <div class="imagesofWork" id="workThree">
-        <img src="work/AoV/1.jpeg">
+      <div onmouseover="display3(this)" onmouseout="displayOff3(this)" class="imagesofWork">
+        <img id="workThree" src="work/AoV/1.jpeg">
       </div>
       <div class="imagesofWork" id="workTwo">
         <img src="work/GaNP/1.jpg">
       </div>
       <div class="imagesofWork" id="workFive">
-        <img src="work/GGG/1.gif">
+        <a href="https://gifgiffergiffest.netlify.com/" target="_blank"><img src="work/GGG/1.gif"></a>
       </div>
       <div class="imagesofWork" id="workSix">
         <img src="work/Paris/1.jpeg">

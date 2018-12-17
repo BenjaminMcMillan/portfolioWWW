@@ -29,6 +29,7 @@ body {
 
 .info {
   margin: 0;
+  opacity: 1;
 }
 
 .info:hover{
@@ -45,6 +46,8 @@ body {
   line-height: 95%;
   font-size: 3vw;
   margin-bottom: 0;
+  transition-timing-function: ease-in-out;
+  transition: 0.2s;
 }
 
 #test2 {
@@ -54,6 +57,10 @@ body {
 #test2:hover {
   display: none;
   color: red;
+}
+
+span {
+  text-decoration: underline;
 }
 
 /* #description { */
