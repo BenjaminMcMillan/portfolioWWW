@@ -43,6 +43,21 @@ function displayOff3(x) {
   text2.style.opacity = "1"
 }
 
+function display4(x) {
+    var text = document.getElementById("IB");
+    var text2 = document.querySelector("#secondInfo");
+    text2.style.opacity = "0.2"
+    console.log(text2)
+    text.style.display = "block";
+}
+
+function displayOff4(x) {
+  var text = document.getElementById("IB");
+  text.style.display = "none";
+  var text2 = document.querySelector("#secondInfo");
+  text2.style.opacity = "1"
+}
+
 window.onload = () => {
 
 
@@ -80,9 +95,9 @@ var ll = OtBTImages.length - 1;
 
 
 
-var getDiv = document.querySelector("#workThree")
+// var getDiv = document.querySelector("#workThree")
 
-getDiv.onlick = function changeThis() {
+// getDiv.onclick = function changeThis() {
 var getAoVTag = document.querySelector('#workThree');
 var AoVImages = ["1.jpeg", "2.jpeg", "3.jpeg", "4.jpeg", "5.jpeg", "6.jpeg", "7.jpeg"];
 
@@ -94,10 +109,25 @@ var lll = AoVImages.length - 1;
     iii = 0;
   }
   getAoVTag.src = "work/AoV/" + AoVImages[iii];
-  // loopTimer = setTimeout(loop, 3000);
+  loopTimer = setTimeout(loop, 3000);
 
   ++iii;
 })();
-}
+
+
+var getIBTag = document.querySelector('#workEight');
+var IBImages = ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg", "7.jpg", "8.jpg", "9.jpg", "10.jpg"];
+
+var iiii = 0;
+var llll = IBImages.length - 1;
+
+(function loop() {
+  if (iiii > llll) {
+    iiii = 0;
+  }
+  getIBTag.src = "work/IB/" + IBImages[iiii];
+  loopTimer = setTimeout(loop, 3000);
+  ++iiii;
+})();
 
 }
